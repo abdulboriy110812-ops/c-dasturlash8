@@ -76,6 +76,16 @@ void mashq6(void)
     printf("Each pays: %.2f\n",result);
 }
 
+int x_value(int i){
+    return i - 1;
+
+}
+
+int y_value(int i){
+    return i + 1;
+    
+}
+
 int main(void)
 {
 
@@ -85,6 +95,21 @@ int main(void)
     mashq4();
     mashq5();
     mashq6();
+
+    int userson;
+    printf("Son kiriting:\n");
+    scanf("%d",&userson);
+    
+    for (int i = 1; i < userson; i++)
+    {
+         int x = x_value(i);
+         int y = y_value(i);
+         printf("x:%d\ny:%d",x,y);
+    }
+    
+   
+
+    
 
     return 0;
 }
